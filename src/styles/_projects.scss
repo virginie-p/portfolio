@@ -1,0 +1,31 @@
+#project-1 {
+    background: center / cover no-repeat url("../img/banniere.jpg");
+}
+
+.glide__slides {
+    height: 250px;
+    align-items: center;
+    margin: 0;
+}
+.glide__slide {
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+
+.glide__arrow {
+    background: $dark;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.295);
+    border: transparent;
+    padding: 10px 12px;
+    line-height: inherit;
+    transition: box-shadow 200ms ease;
+    svg {
+        fill: white;
+    }
+    &:hover {
+        box-shadow: none;
+    }
+}

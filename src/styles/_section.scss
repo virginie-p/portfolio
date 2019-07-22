@@ -19,16 +19,15 @@
 
 .sectionContent {
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     #bubble {
         position: relative;
-        width: 60%;
+        width: 50%;
         left: 12px;
         background: $gray-100;
         text-align: left;
         padding: 3% 3%;
-        z-index: 100;
         line-height: 1.5rem;
         border-radius: 8px 8px 8px 0;
         p {
@@ -50,4 +49,16 @@
       top: auto;
       bottom: 0px;
     }
+}
+
+.colouredSection {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    fill: $rose;
+}
+
+.colouredSectionBg {
+    background-color: $rose;
 }

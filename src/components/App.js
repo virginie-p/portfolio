@@ -3,7 +3,7 @@ import Header from './Header'
 import Nav from './Nav'
 import About from './About'
 import Journey from './Journey'
-import Projects from './Projects'
+import Project from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
 
@@ -14,11 +14,10 @@ function App() {
     <div>
       <Nav />
       <Header />
-
       <main>
         <About />
         <Journey />
-        <Projects />
+        <Project/>
         <Contact />
       </main>
       <Footer />

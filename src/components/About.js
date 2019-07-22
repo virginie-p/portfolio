@@ -7,7 +7,7 @@ function About() {
         <section id="about-me">
             <div className="sectionTitle">
                 <img src={divider} alt=""/>
-                <h1>A propos de moi</h1>
+                <h1>À propos de moi</h1>
                 <img src={divider} alt=""/>
             </div>
             <div className="sectionContent">
@@ -19,8 +19,6 @@ function About() {
                         J'ai donc entamé une reconversion professionnelle et me voilà Développeuse Web ! </p>
                 </div>
             </div>
-            
-
         </section>
     )
 }
