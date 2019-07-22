@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'nav';
+@import 'header';
+@import 'section';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: $Muli;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    min-height: 250px;
+    padding: 0 30px 0 30px;
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $dark;
+    }
+}

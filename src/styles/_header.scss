@@ -1,0 +1,38 @@
+.header {
+    position: relative;
+    background-color: $dark;
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    .headerContent {
+        position: absolute;
+        bottom: 60%;
+        width: 100%;
+        text-align: center;
+        color:$dark;
+
+        h1 {
+            font-size : 2.5rem;
+            font-weight: 200;
+            margin: 0.5em 0 0.5em 0;
+        }
+
+        h2 {
+            font-size : 1.75rem;
+            font-weight: 400;
+            margin: 0.25em 0 0.25em 0;
+        }
+
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        fill: $white;
+    }
+    
+}
+
