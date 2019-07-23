@@ -9,14 +9,14 @@ class Project extends Component {
             backgroundSize: "cover",
             backgroundPosition: "center"
         }
-
         return (
-            <li class="glide__slide" id={this.props.id} style={slideStyle}>
-                <div className="slide-content" >
-                {this.props.name}
-                </div>
+            <div className="slide" id={this.props.id} style={slideStyle}>
                 <div className="filter"></div>
-            </li>
+                <a className="slide-content" href={this.props.url} target="_blank" rel="noopener noreferrer">
+                {this.props.name}
+                </a>
+
+            </div>
         )
 
     }

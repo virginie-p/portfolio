@@ -10,10 +10,18 @@
     display: flex; 
     justify-content: center;
     align-items: center;
+    margin: 15px 0 15px 0;
     img {
-        height: 95%;
-        width: 10%;
-        padding: 0 10px 0 10px;
+        height: 40px;
+        width: 100px;
+        
+        &:nth-child(1) {
+            padding-right:40px;
+        }
+        &:nth-child(3) {
+            padding-left:40px;
+        }
+
     }
 }
 
@@ -49,16 +57,4 @@
       top: auto;
       bottom: 0px;
     }
-}
-
-.colouredSection {
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    fill: $rose;
-}
-
-.colouredSectionBg {
-    background-color: $rose;
 }

@@ -7,8 +7,12 @@
     }
     .headerContent {
         position: absolute;
-        bottom: 60%;
+        top: 35%;
+        left: 0;
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         color:$dark;
 
@@ -24,6 +28,19 @@
             margin: 0.25em 0 0.25em 0;
         }
 
+
+        @media all and (max-width: 415px) {
+            bottom: 40%;
+            h1 {
+                
+                font-size : 1.5rem;
+            }
+            h2 {
+                font-size : 1.25rem;
+            }
+        }
+
+       
     }
     
 }

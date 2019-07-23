@@ -12,7 +12,7 @@ function Journey() {
                 </div>
                 <div>
                     <p>Vous voulez en savoir plus sur le chemin que j'ai parcouru ? </p>
-                    <a style={{display:"flex", justifyContent:"center"}} href="https://virginie-pereira.fr/CV.pdf">
+                    <a style={{display:"flex", justifyContent:"center"}} href="https://virginie-pereira.fr/CV.pdf" target="_blank"  rel="noopener noreferrer">
                         <p>Téléchargez mon CV</p>
                         <img style={{width:"40px", paddingLeft:"10px"}} src={PDF} alt="Lien vers mon CV"/>
                     </a>  
