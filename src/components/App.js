@@ -3,7 +3,8 @@ import Header from './Header'
 import Nav from './Nav'
 import About from './About'
 import Journey from './Journey'
-import Project from './Projects'
+import Projects from './Projects'
+import ProjectsList from './../ProjectsList'
 import Contact from './Contact'
 import Footer from './Footer'
 
@@ -17,7 +18,7 @@ function App() {
       <main>
         <About />
         <Journey />
-        <Project/>
+        <Projects projects={ProjectsList}/>
         <Contact />
       </main>
       <Footer />

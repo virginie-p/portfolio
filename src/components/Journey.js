@@ -4,7 +4,7 @@ import PDF from './../img/pdf.png'
 
 function Journey() {
     return (
-            <section  id="my-journey">
+            <section id="my-journey">
                 <div className="sectionTitle">
                     <img src={divider} alt=""/>
                     <h1>Mon Parcours</h1>
