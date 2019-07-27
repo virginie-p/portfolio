@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner2 from './../img/banniere.jpg'
+import Banner2 from './../img/banniere (1).jpg'
 import { tada } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import Wave from './Wave.js'
@@ -17,7 +17,7 @@ function Header() {
             <img src={Banner2} alt="" />
             <div className="headerContent">
                 <StyleRoot>
-                    <h1 style={animate.tada}>Virginie PEREIRA</h1>
+                    <h1 style={animate.tada}>Virginie Pereira</h1>
                 </StyleRoot>
                 <h2>Développeuse Web</h2>
                 

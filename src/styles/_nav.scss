@@ -1,6 +1,6 @@
 nav, footer {
     height: 35px;
-    background-color: #ad48768f;
+    background-color: rgba($blue, 0.8);
     margin: 0;
     display: flex;
     justify-content: center;
@@ -21,6 +21,9 @@ nav, footer {
         }
         li {
             color: $white;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -31,7 +34,8 @@ nav {
     z-index: 1;
 }
 footer {
-    margin-top: auto;
+    line-height: 1;
+    margin-top: 30px;
     h1 {
         margin: 0;
     }

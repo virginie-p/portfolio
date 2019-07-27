@@ -4,24 +4,71 @@
         border:  solid 10px $white;
         box-shadow: 0px 0px 10px 0 rgba(0,0,0,.2);
     }
+    
+    .left-quote {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 45px;
+        height: auto;
+        fill: $gray-300;
+    }
+
+    .right-quote {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: auto;
+        fill: $gray-300;
+    }
 }
 
 .sectionTitle {
-    display: flex; 
+    
+    display: flex;
     justify-content: center;
-    align-items: center;
     margin: 15px 0 15px 0;
-    img {
-        height: 40px;
-        width: 100px;
+    h1 {
+        margin-bottom: 8px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -0.300rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            height: 0.75rem;
         
-        &:nth-child(1) {
-            padding-right:40px;
+            // Position the line behind the text so that
+            // it is still easily readable
+            z-index: -1;
+        
+            // The SVG is added as an SVG background image
+            background-image: url('../img/Underline.svg');
+            background-repeat: no-repeat;
+        
+            // This allows the SVG to flex in size to fit
+            // any length of word. If the word is short,
+            // the SVG will be stretched vertically, if it
+            // is long, the SVG will be stretched horizontally.
+            // The jagged nature of this particular SVG works
+            // with this transforming.
+            background-size: cover;
         }
-        &:nth-child(3) {
-            padding-left:40px;
-        }
+    }
+    
+}
 
+#my-journey {
+
+    a {
+        color: $blue;
+    }
+    img {
+        height: auto;
+        width: 50px;
+        margin: auto 0 auto 15px;
     }
 }
 
@@ -29,17 +76,18 @@
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
+
     #bubble {
         position: relative;
         width: 50%;
         left: 12px;
         background: $gray-100;
         text-align: left;
-        padding: 3% 3%;
+        padding: 60px 60px;
         line-height: 1.5rem;
         border-radius: 8px 8px 8px 0;
         p {
-            text-align: center;
+            text-align: justify;
             font-style: italic;
             margin : 0;
         }

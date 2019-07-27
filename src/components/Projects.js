@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Project from './Project'
-import divider from './../img/divider-01.png'
 
 class Projects extends Component {
 
@@ -12,9 +11,7 @@ class Projects extends Component {
         return (
             <section id="my-projects">
                 <div className="sectionTitle">
-                    <img src={divider} alt=""/>
                     <h1>Mes Projets</h1>
-                    <img src={divider} alt=""/>
                 </div>
                 <div className="slider">
                     {this.mountProjects()}

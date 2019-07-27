@@ -11,14 +11,23 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 $light: #F2F4F3 !default;
-$dark:  #293132 !default;
-$dark-purple: #2B193D !default;
-$purple: #6C3B80 !default;
-$light-purple:  rgb(120, 76, 138) !default;
-$blue: #50B9CA !default;
-$light-blue: rgb(130, 199, 209) !default;
-$red-orange: #c31432;
-$burn-orange: #A01129;
+$dark:  #474350 !default;
+$purple: #542344 !default;
+$yellow: rgb(233, 154, 37) !default;
 $rose: #d89da7;
+$green: #9BC149;
+$blue: rgb(41, 136, 160);
 
-$Muli : 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'Tahu';
+    src: url('../fonts/Tahu/Tahu-.eot?#iefix') format('embedded-opentype'),  
+    url('../fonts/Tahu/Tahu-.woff') format('woff'), 
+    url('../fonts/Tahu/Tahu-.ttf')  format('truetype'), 
+    url('../fonts/Tahu/Tahu-.svg#Tahu!') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$Jaldi: 'Jaldi', sans-serif;
+$Quicksand: 'Quicksand', sans-serif;
+  
