@@ -22,14 +22,21 @@
         height: auto;
         fill: $gray-300;
     }
+
+    @media all and (max-width: 450px) {
+        #profilePicture {
+            width: 70%;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .sectionTitle {
     
     display: flex;
     justify-content: center;
-    margin: 15px 0 15px 0;
-    h1 {
+    margin: 0 30px 0;
+    h2 {
         margin-bottom: 8px;
         position: relative;
         &::after {
@@ -61,14 +68,26 @@
 }
 
 #my-journey {
-
     a {
         color: $blue;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 800;
     }
     img {
         height: auto;
         width: 50px;
         margin: auto 0 auto 15px;
+    }
+
+    @media all and (max-width: 450px) {
+        a {
+            display: block;
+        }
+        img {
+            margin: 0;
+        }
     }
 }
 
@@ -76,7 +95,7 @@
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
-
+    margin-top: 40px;
     #bubble {
         position: relative;
         width: 50%;
@@ -90,7 +109,7 @@
             text-align: justify;
             font-style: italic;
             margin : 0;
-        }
+        } 
     }
     #bubble:after {
       content: '';
@@ -104,5 +123,22 @@
       right: auto;
       top: auto;
       bottom: 0px;
+    }
+
+    @media all and (max-width: 450px) {
+        display: block; 
+        #bubble {
+            width: auto;
+            margin: 0 15px;
+            left: 0;
+            font-size: 0.85em;
+            border-radius: 8px ;
+            p {
+            text-align: left;
+            }
+        }
+        #bubble:after {
+            content: none;
+        }
     }
 }

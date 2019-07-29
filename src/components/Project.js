@@ -10,12 +10,12 @@ class Project extends Component {
             backgroundPosition: "center"
         }
         return (
-            <div className="slide" id={this.props.id} style={slideStyle}>
+            <div className="slide" id={this.props.id}>
                 <div className="filter"></div>
                 <a className="slide-content" href={this.props.url} target="_blank" rel="noopener noreferrer">
-                {this.props.name}
+                    {this.props.name}
                 </a>
-
+                <div className="slide-background"  style={slideStyle}></div>
             </div>
         )
 

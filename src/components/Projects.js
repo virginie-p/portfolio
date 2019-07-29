@@ -11,7 +11,7 @@ class Projects extends Component {
         return (
             <section id="my-projects">
                 <div className="sectionTitle">
-                    <h1>Mes Projets</h1>
+                    <h2>Mes Projets</h2>
                 </div>
                 <div className="slider">
                     {this.mountProjects()}

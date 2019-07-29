@@ -1,12 +1,15 @@
 nav, footer {
-    height: 35px;
-    background-color: rgba($blue, 0.8);
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba($blue, 0.8);
+    margin: 0;
     color: $dark;
-    padding: 10px 10px 10px 10px;
+    padding: 0;
+    
+    .toggleMenu {
+        display: none;
+    }
 
     ul {
         padding: 0;
@@ -34,9 +37,72 @@ nav {
     z-index: 1;
 }
 footer {
+    align-items: center;
+    height: 50px;
     line-height: 1;
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    justify-items: center;
+
+    p {
+        grid-column-start: 2;
+        margin: 0;
+        color: white;
+    }
     h1 {
         margin: 0;
+    }
+    ul {
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+    img {
+        height: 40px;
+        width: auto;
+        margin: 0 5px;
+        filter : invert(100%);
+    }
+
+    @media all and (max-width: 450px) {
+        grid-template-columns: 2fr 1fr;
+        p {
+            grid-column-start: 1;
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    .menuCollapsible {
+        flex-direction: column;
+        div {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            align-items: center;
+            justify-content: space-between;
+            color: $white;
+            img {
+                filter: invert(100%);
+            }
+        }
+
+        .menuElts {
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease-out;
+        }
+        
+      
+    }
+
+
+    nav, footer {
+        background-color: rgba($blue, 0.9);
     }
 }

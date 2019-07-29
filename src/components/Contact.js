@@ -52,7 +52,7 @@ class Contact extends React.Component {
         return (
             <section id="contact-form">
                 <div className="sectionTitle">
-                    <h1>Contact</h1>
+                    <h2>Contact</h2>
                 </div>
                 <div>
                     <form action="/action_page.php" >
@@ -70,7 +70,7 @@ class Contact extends React.Component {
                         </div>
                         <div className="form-line">
                             <label>Message :</label>
-                            <textarea id="message" name="message" placeholder="Ecrivez votre message ici" value={this.state.message} onChange={this.handleChange}></textarea>
+                            <textarea id="message" name="message" placeholder="Ecrivez votre message ici" value={this.state.message} onChange={this.handleChange} rows="5" ></textarea>
                         </div>
                         <input type="submit" value="Submit" onClick={this.handleFormSubmit}/>
                         <div id="notification">

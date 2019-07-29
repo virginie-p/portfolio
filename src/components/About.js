@@ -7,8 +7,7 @@ function About() {
     return (
         <section id="about-me">
             <div className="sectionTitle">
-                <h1>À propos de moi 
-                </h1>                
+                <h2>À propos de moi</h2>                
             </div>
             <div className="sectionContent">
                 <img id="profilePicture" src={photo} alt=""/>
