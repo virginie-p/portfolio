@@ -1,28 +1,22 @@
 import React from 'react'
-import Header from './Header'
-import Nav from './Nav'
-import About from './About'
-import Journey from './Journey'
-import Projects from './Projects'
-import ProjectsList from './../ProjectsList'
-import Contact from './Contact'
-import Footer from './Footer'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
+
 
 import './../styles/main.css'
+import OnePage from './Onepage'
+import LegalNotice from './LegalNotice'
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Header />
-      <main>
-        <About />
-        <Journey />
-        <Projects projects={ProjectsList}/>
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/" exact component={OnePage}></Route>
+          <Route path="/legal-notice" component={LegalNotice}></Route>
+        </Switch>
+      </ScrollToTop>
+    </Router>
   )
 }
 

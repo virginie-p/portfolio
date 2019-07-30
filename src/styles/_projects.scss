@@ -9,6 +9,11 @@
     height: 300px;
 }
 
+.slick-slide > div{
+    height: 100%;
+    width: 100%;
+}
+
 .slide {
     position: relative;
     overflow: hidden;

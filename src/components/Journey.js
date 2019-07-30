@@ -7,7 +7,7 @@ function Journey() {
                 <div className="sectionTitle">
                     <h2>Mon Parcours</h2>
                 </div>
-                <div>
+                <div className="sectionContent">
                     <p>Vous voulez en savoir plus sur le chemin que j'ai parcouru ? </p>
                     <a href="https://virginie-pereira.fr/CV.pdf" target="_blank"  rel="noopener noreferrer">
                         <p>Téléchargez mon CV</p>

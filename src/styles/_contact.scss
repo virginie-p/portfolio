@@ -1,11 +1,10 @@
 
 .form-line {
     text-align: left;
-    margin-left: 30%;
-    margin-right: 30%;
     margin-bottom: 15px;
     line-height: 1.75;
     textarea {
+       box-sizing: border-box;
        width: 100%;
        font-family: $Quicksand;
        outline: none;
@@ -40,4 +39,18 @@ input[type="submit"] {
 
 .contact-form {
     margin-bottom: 40px;
+}
+
+.error-message {
+    color: rgb(221, 24, 63);
+    font-size: 0.90em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+@media all and (min-width: 450px) {
+    form {
+        width: 450px;
+        margin: 0 auto ;
+    }
 }
