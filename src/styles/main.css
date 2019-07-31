@@ -46,10 +46,14 @@ nav ul a, footer ul a {
 
 nav ul li, footer ul li {
   color: #fff;
+  font-weight: bold;
 }
 
 nav ul li:hover, footer ul li:hover {
   cursor: pointer;
+  color: #1a6375;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
 }
 
 nav {
@@ -98,6 +102,8 @@ footer svg {
   width: auto;
   margin: 0 5px;
   fill: #fff;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
 }
 
 footer svg:hover {
@@ -110,6 +116,8 @@ footer a {
   color: inherit;
   width: 80%;
   margin: 0 auto;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
 }
 
 footer a:hover {
@@ -195,10 +203,10 @@ footer a:hover {
   position: absolute;
   top: 20%;
   left: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -221,6 +229,26 @@ footer a:hover {
   margin: 0.25em 0 0.25em 0;
 }
 
+.header .headerContent #arrow {
+  margin-top: 60px;
+}
+
+.header .headerContent img {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+@media all and (max-width: 900px) {
+  .header .headerContent img {
+    width: 30px;
+    height: 30px;
+  }
+  .header .headerContent #arrow {
+    margin-top: 40px;
+  }
+}
+
 @media all and (max-width: 550px) {
   .header {
     margin-top: 40px;
@@ -236,11 +264,120 @@ footer a:hover {
   }
 }
 
+@media all and (min-width: 1720px) {
+  .header {
+    margin-top: 40px;
+  }
+  .header .headerContent h1 {
+    font-size: 6em;
+  }
+  .header .headerContent h2 {
+    font-size: 3em;
+  }
+}
+
 .wave {
   position: absolute;
+  left: 0;
   bottom: 0;
   overflow: hidden;
   fill: #fff;
+}
+
+body {
+  font: 1em sans-serif;
+  text-align: center;
+}
+
+.stage {
+  border-bottom: 3px solid #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 330px;
+  width: 100%;
+}
+
+.box {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 200px;
+}
+
+.bounce-7 {
+  -webkit-animation-name: bounce-7;
+          animation-name: bounce-7;
+  -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+          animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@-webkit-keyframes bounce-7 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-30px);
+            transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes bounce-7 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-30px);
+            transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
 }
 
 #about-me #profilePicture {
@@ -380,6 +517,12 @@ footer a:hover {
           justify-content: center;
   text-decoration: none;
   font-weight: 800;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+
+#my-journey a:hover {
+  color: #1a6375;
 }
 
 #my-journey img {
@@ -492,6 +635,7 @@ footer a:hover {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   outline: none;
+  padding: 5px;
   border-radius: 4px;
   border: 1px solid #dee2e6;
 }
@@ -521,6 +665,10 @@ input[type="submit"] {
   background-color: #9BC149;
   border: 1px solid #9BC149;
   border-radius: 40px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 .contact-form {

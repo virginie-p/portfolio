@@ -8,6 +8,7 @@
        width: 100%;
        font-family: $Quicksand;
        outline: none;
+       padding: 5px;
        border-radius: 4px;
        border: 1px solid $gray-300;
     }
@@ -35,6 +36,9 @@ input[type="submit"] {
     background-color: $green;
     border: 1px solid $green;
     border-radius: 40px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .contact-form {

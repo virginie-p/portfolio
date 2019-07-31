@@ -47,16 +47,19 @@ class Contact extends React.Component {
             })
             .catch(error => this.setState({ error: error.message }));
         }
-        document.getElementsByTagName('form')[0].scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-        });
     }
 
     handleChange(e) {
         const {id, value} = e.target;
         this.setState({
             [id]: value
+        });
+    }
+
+    automaticScroll() {
+        document.getElementsByTagName('form')[0].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
         });
     }
 
@@ -74,6 +77,8 @@ class Contact extends React.Component {
             errorMessage.innerHTML = "Merci de bien vouloir renseigner votre prénom.";
             input.parentNode.appendChild(errorMessage);
         }
+
+        this.automaticScroll();
     }
 
     checkLastname(){
@@ -90,6 +95,8 @@ class Contact extends React.Component {
             errorMessage.innerHTML ="Merci de bien vouloir renseigner votre nom.";
             input.parentNode.appendChild(errorMessage);
         }
+
+        this.automaticScroll();
     }
 
     checkMessage() {
@@ -106,6 +113,8 @@ class Contact extends React.Component {
             errorMessage.innerHTML = "Merci de bien vouloir renseigner un message.";
             input.parentNode.appendChild(errorMessage);
         }
+
+        this.automaticScroll();
     }
 
     checkEmail() {
@@ -123,6 +132,8 @@ class Contact extends React.Component {
             errorMessage.innerHTML = "Cette adresse mail n'est pas correcte. Merci de la modifier.";
             input.parentNode.appendChild(errorMessage);
         }
+
+        this.automaticScroll();
     }
 
     checkFieldsValue() {

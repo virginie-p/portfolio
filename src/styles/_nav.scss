@@ -24,8 +24,11 @@ nav, footer {
         }
         li {
             color: $white;
+            font-weight: bold;
             &:hover {
                 cursor: pointer;
+                color: $dark-blue;
+                transition-duration: 0.15s;
             }
         }
     }
@@ -63,7 +66,7 @@ footer {
         width: auto;
         margin: 0 5px;
         fill: $white;
-
+        transition-duration: 0.15s;
         &:hover {
             fill: $dark-blue;
         }
@@ -75,7 +78,7 @@ footer {
         color: inherit;
         width: 80%;
         margin: 0 auto;
-
+        transition-duration: 0.15s;
         &:hover {
             color: $dark-blue;
         }

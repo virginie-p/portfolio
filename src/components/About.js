@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from './../img/profile-picture.png'
+import photo from './../img/profile-picture.jpg'
 import LeftQuote from './LeftQuote.js'
 import RightQuote from './RightQuote.js'
 
