@@ -19,7 +19,7 @@ class Nav extends Component {
             }  
         }
 
-        if (window.innerWidth <= 450) {
+        if (window.innerWidth <= 750) {
             let menuTitle = document.getElementsByClassName('toggleMenu')[0];
             menuTitle.addEventListener('click', toggleMenu);
             menuElts.addEventListener('click', toggleMenu);
