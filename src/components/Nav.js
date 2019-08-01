@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Burger from './../img/menu.png'
+import Logo from './../img/logo.png'
 
 class Nav extends Component {
 
@@ -27,20 +28,34 @@ class Nav extends Component {
     }
 
     navigateToSection(e) {
-        let elementID = e.target.getAttribute('data-section');
         e.preventDefault();
-        document.getElementById(elementID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
+        let elementID = e.target.getAttribute('data-section');
+        let navSize = document.getElementsByClassName('responsive-menu')[0].offsetHeight;
+        let elementTop = document.getElementById(elementID).getBoundingClientRect().top;
+        let bodyRect = document.body.getBoundingClientRect().top;
+        console.log('elementTop:' + elementTop);
+        console.log('navSize:' + navSize);
+
+        let offsetPosition = (elementTop - bodyRect) - navSize;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
         });
+
     }
 
     render() {
         return (
             <nav className="menuCollapsible">
-                <div className="toggleMenu">
-                    <p>Menu</p>
-                    <img src={Burger} alt=""/>
+                <div className="responsive-menu">
+                    <div id="menu-logo">
+                        <img src={Logo} alt=""/>
+                    </div>
+                    <div className="toggleMenu">
+                        <p>Menu</p>
+                        <img src={Burger} alt=""/>
+                    </div>
                 </div>
                 <ul className="menuElts">
                     <li data-section="about-me" onClick={this.navigateToSection}>A propos</li>

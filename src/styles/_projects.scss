@@ -44,12 +44,20 @@
     padding: 0 15px 0 15px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $white;
     font-weight: 700;
     z-index: 400;
     text-decoration: none;
+
+    .technologies {
+        background: $orange;
+        border-radius: 8px;
+        color: $white;
+        padding: 10px;
+    }
 
     &:hover+.slide-background {
         transform: scale(1.2);

@@ -8,8 +8,6 @@ import ProjectsList from './../ProjectsList'
 import Contact from './Contact'
 import Footer from './Footer'
 
-import './../menuScroll'
-
 function OnePage() {
     return (
         <div>

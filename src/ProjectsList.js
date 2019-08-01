@@ -9,6 +9,7 @@ const projects = [
         key: 1,
         bullet: "=0",
         name: "WebAgency : intégration d'une maquette",
+        technologies: "HTML/CSS",
         image: imageP1, 
         url: "https://virginie-pereira.fr/projet-1"
     },
@@ -16,27 +17,31 @@ const projects = [
         key: 2,
         bullet: "=1",
         name: "Office du Tourisme de Strasbourg : site Wordpress",
+        technologies: "Wordpress",
         image: imageP2,
         url: "https://virginie-pereira.fr/projet-2"
     },
     {
         key: 3,
         bullet: "=2",
-        name: "Bikee: récupération de données via une API et affichage dynamique d'une carte en JS",
+        name: "Bikee: site de réservations de vélo sur Nantes",
+        technologies: "Javascript",
         image: imageP3,
         url: "https://virginie-pereira.fr/projet-3"
     }, 
     {
         key: 4,
         bullet: "=3",
-        name: "Un Billet pour l'Alaska: blog avec back-office d'administration en PHP",
+        name: "Un Billet pour l'Alaska: blog avec back-office d'administration",
+        technologies: "PHP, jQuery,Bootstrap",
         image: imageP4,
         url: "https://virginie-pereira.fr/projet-4"
     }, 
     {
         key: 5,
         bullet: "=4",
-        name: "Epic Friends: site de rencontres amicales pour Geek (projet de fin de formation)",
+        name: "Epic Friends: site de rencontres amicales pour Geek",
+        technologies: "PHP, jQuery, Twig, Composer",
         image: imageP5,
         url: "https://epic-friends.virginie-pereira.fr/"
     }

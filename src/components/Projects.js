@@ -36,7 +36,7 @@ class Projects extends Component {
   }
 
   mountProjects() {
-      const projects = this.props.projects.map(project => <Project key={project.key} id={project.key} bgImage={project.image} name={project.name} url={project.url} />)
+      const projects = this.props.projects.map(project => <Project key={project.key} id={project.key} bgImage={project.image} name={project.name} technologies={project.technologies} url={project.url} />)
       return projects
   }
   
