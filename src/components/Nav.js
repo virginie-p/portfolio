@@ -50,11 +50,11 @@ class Nav extends Component {
             <nav className="menuCollapsible">
                 <div className="responsive-menu">
                     <div id="menu-logo">
-                        <img src={Logo} alt=""/>
+                        <img src={Logo} alt="Logo de Virginie PEREIRA"/>
                     </div>
                     <div className="toggleMenu">
                         <p>Menu</p>
-                        <img src={Burger} alt=""/>
+                        <img src={Burger} alt="Icône cliquable pour accéder au menu"/>
                     </div>
                 </div>
                 <ul className="menuElts">

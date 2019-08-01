@@ -4,6 +4,8 @@ import ScrollToTop from './ScrollToTop'
 
 
 import './../styles/main.css'
+import '../slick-1.8.1/slick/slick-theme.css'
+import '../slick-1.8.1/slick/slick.css'
 import OnePage from './Onepage'
 import LegalNotice from './LegalNotice'
 

@@ -10,7 +10,7 @@ function About() {
                 <h2>À propos de moi</h2>                
             </div>
             <div className="sectionContent">
-                <img id="profilePicture" src={photo} alt=""/>
+                <img id="profilePicture" src={photo} alt="Virginie PEREIRA"/>
                 <div id="bubble">
                     <div id="bubble-content">
                         <LeftQuote />

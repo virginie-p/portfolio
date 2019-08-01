@@ -126,7 +126,7 @@
     }
 
     a {
-        color: $blue;
+        color: $dark-blue;
         display: flex;
         justify-content: center;
         text-decoration: none;
@@ -134,7 +134,7 @@
         transition-duration: 0.15s;
 
         &:hover {
-            color: $dark-blue;
+            color: $blue;
         }
     }
     img {

@@ -152,24 +152,23 @@ class Contact extends React.Component {
                 <div className="sectionContent">
                     <form  onSubmit={this.handleFormSubmit}>
                         <div className="form-line">
-                            <label>Prénom :</label>
+                            <label htmlFor="fname">Prénom :</label>
                             <input type="text" id="fname" name="firstname" value={this.state.fname} onChange={this.handleChange} onBlur={this.checkFirstname}/>
                         </div>
                         <div className="form-line">
-                            <label>Nom :</label>
+                            <label htmlFor="lname">Nom :</label>
                             <input type="text" id="lname" name="lastname" value={this.state.mname} onChange={this.handleChange} onBlur={this.checkLastname}/>
                         </div>
                         <div className="form-line">
-                            <label>Email :</label>
+                            <label htmlFor="email">Email :</label>
                             <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleChange} onBlur={this.checkEmail}/>
                         </div>
                         <div className="form-line">
-                            <label>Message :</label>
+                            <label htmlFor="message">Message :</label>
                             <textarea id="message" name="message" placeholder="Ecrivez votre message ici" value={this.state.message} onChange={this.handleChange} onBlur={this.checkMessage} rows="5" ></textarea>
                         </div>
                         <input type="submit" value="Envoyer"/>
-                        <div id="notification">
-                            
+                        <div id="notification"> 
                         </div>
                     </form>
                 </div>

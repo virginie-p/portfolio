@@ -3,7 +3,7 @@ import React from 'react'
 
 function RightQuote() {
 	return (
-		<svg className="right-quote" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		<svg className="right-quote" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 	width="508.044px" height="508.044px" viewBox="0 0 508.044 508.044">
 			<g>
 				<g>
