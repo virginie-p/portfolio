@@ -42,7 +42,12 @@ class Contact extends React.Component {
                 let message = this.state.mailSent ? "Merci pour votre message, je vous répondrai dès que possible" : "Une erreur est survenue";
                 document.getElementById('notification').innerHTML = '';
                 document.getElementById('notification').append(message);
-                document.getElementsByTagName('form')[0].reset();
+                this.setState({
+                    fname : '',
+                    lname: '',
+                    email: '',
+                    message: ''
+                });
             })
             .catch(error => this.setState({ error: error.message }));
         }
@@ -149,14 +154,14 @@ class Contact extends React.Component {
                     <h2>Contact</h2>
                 </div>
                 <div className="sectionContent">
-                    <form  onSubmit={this.handleFormSubmit}>
+                    <form id="form-contact" onSubmit={this.handleFormSubmit}>
                         <div className="form-line">
                             <label htmlFor="fname">Prénom :</label>
                             <input type="text" id="fname" name="firstname" value={this.state.fname} onChange={this.handleChange} onBlur={this.checkFirstname}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="lname">Nom :</label>
-                            <input type="text" id="lname" name="lastname" value={this.state.mname} onChange={this.handleChange} onBlur={this.checkLastname}/>
+                            <input type="text" id="lname" name="lastname" value={this.state.lname} onChange={this.handleChange} onBlur={this.checkLastname}/>
                         </div>
                         <div className="form-line">
                             <label htmlFor="email">Email :</label>
