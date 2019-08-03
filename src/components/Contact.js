@@ -28,12 +28,11 @@ class Contact extends React.Component {
     handleFormSubmit(e) {
         e.preventDefault();
         this.checkFieldsValue();
-
-        if (document.querySelectorAll('.error-message') === '') {
+        if (document.querySelectorAll('.error-message').length === 0) {
             Axios({
                 method: 'post',
                 url: `${API_PATH}`,
-                headers: { 'content-type': 'application/json' },
+                headers: {'content-type': 'application/json'},
                 data: this.state
             })
             .then(result => {

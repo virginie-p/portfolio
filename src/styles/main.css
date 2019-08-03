@@ -543,6 +543,9 @@ body {
 }
 
 @media all and (max-width: 450px) {
+  #my-journey .sectionContent {
+    margin: 30px 15px;
+  }
   #my-journey a {
     display: block;
   }

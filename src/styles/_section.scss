@@ -144,6 +144,9 @@
     }
 
     @media all and (max-width: 450px) {
+        .sectionContent {
+            margin: 30px 15px;
+        }
         a {
             display: block;
         }
