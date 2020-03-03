@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 
 
-import './../styles/main.css'
+import './../styles/css/main.css'
 import '../slick-1.8.1/slick/slick-theme.css'
 import '../slick-1.8.1/slick/slick.css'
 import OnePage from './Onepage'

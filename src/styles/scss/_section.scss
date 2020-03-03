@@ -52,7 +52,7 @@
             z-index: -1;
         
             // The SVG is added as an SVG background image
-            background-image: url('../img/Underline.svg');
+            background-image: url('../../img/Underline.svg');
             background-repeat: no-repeat;
         
             // This allows the SVG to flex in size to fit
@@ -153,5 +153,29 @@
         img {
             margin: 0;
         }
+    }
+}
+
+#video {
+    min-width: 700px;
+    margin: auto;
+    .videoPresentation {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @media all and (max-width: 900px) {
+        .videoPresentation {
+            display: flex;
+        }
+        min-width: auto;
+        margin: 0;
     }
 }

@@ -33,8 +33,6 @@ class Nav extends Component {
         let navSize = document.getElementsByClassName('responsive-menu')[0].offsetHeight;
         let elementTop = document.getElementById(elementID).getBoundingClientRect().top;
         let bodyRect = document.body.getBoundingClientRect().top;
-        console.log('elementTop:' + elementTop);
-        console.log('navSize:' + navSize);
 
         let offsetPosition = (elementTop - bodyRect) - navSize;
 
@@ -59,6 +57,7 @@ class Nav extends Component {
                 </div>
                 <ul className="menuElts">
                     <li data-section="about-me" onClick={this.navigateToSection}>A propos</li>
+                    <li data-section="video" onClick={this.navigateToSection}>Présentation</li>
                     <li data-section="my-journey" onClick={this.navigateToSection}>Mon parcours</li>
                     <li data-section="my-projects" onClick={this.navigateToSection}>Mes projets</li>
                     <li data-section="contact-form" onClick={this.navigateToSection}>Me contacter</li>
